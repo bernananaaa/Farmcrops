@@ -1,0 +1,280 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+/* Navigation spacing */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #457147;
+}
+
+/* Nav-bar CSS */
+.nav-bar ul {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+.nav-bar  li a {
+  display: block;
+  color: white;
+  padding: 5px 16px;
+  text-decoration: none;
+}
+/* Can be change to change the hover color */
+.nav-bar li a:hover {
+  background-color: #73bd77;
+}
+/* Start of Search Filter CSS */
+.kadiwa-filter-container {
+  height: 130px;
+  width: 100%;
+  background-color: #457147;
+}
+
+.kadiwa-filter-container .logo-brand-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.kadiwa-filter-container .logo-brand-container h1  {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.kadiwa-filter-container .logo {
+  margin-right: 10px;
+  width: 80px;
+  height: auto; 
+}
+
+.kadiwa-filter-container .search-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kadiwa-filter-container .search-filter {
+  display: flex;
+
+  margin: 0 0 30px;
+}
+
+.kadiwa-filter-container .search-filter input[type="search"] {
+  border: none;
+  height: 30px;
+  width: 600px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+
+.kadiwa-filter-container .search-filter input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+.kadiwa-filter-container .search-filter button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  height: 30px;
+  padding-top: 2px;
+  width: 40px;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 1;
+  background-color: #ffffff;
+}
+
+.kadiwa-filter-container .search-filter button[type="submit"]:hover {
+  opacity: 1;
+}
+
+.kadiwa-filter-container .search-filter button[type="submit"]:focus, input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+
+/* Button FIlter CSS */
+.kadiwa-button-filter {
+  height: 30px;
+  width: 100%;
+  background-color: #457147;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kadiwa-button-filter .btn {
+  border: none;
+  margin-left: 10px;
+  background-color: transparent;
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  color: #FFFFFF;
+
+
+}
+
+.kadiwa-button-filter .btn:hover {
+  background-color: #73bd77;
+}
+
+.product-menu h1 {
+  font-family: Jacques Francois;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #747070;
+
+}
+
+.product-menu table, th, td {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+/* Si arah gumawa nito */
+.item-container{
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: 1fr 1fr 1fr;  */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-evenly;
+  margin: auto; */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-card-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+  background-color: #457147;
+  width:250px;
+  height:325px;
+  margin: 1rem;
+  padding: 5px;
+}
+
+.card-img-container {
+  background-color: white;
+
+  width: 100%;
+  height: 85%;
+  
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-item-desc {
+  background-color: rgb(211, 240, 233);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+/* @media screen and (max-width: 700px) {
+  .item-container{
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .item-container{
+    display: flex;
+    flex-direction: column;
+  }
+} */
+
+/* Button filter nav menu *//* Style the navigation menu */
+
+
+
+.button-filter-nav-menu {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.button-filter-nav-menu #buttonFilterCategory {
+  display: none;
+}
+
+.button-filter-nav-menu a {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+}
+
+.button-filter-nav-menu a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.button-filter-nav-menu a:hover {
+  background-color: #73bd77;
+  color: white;
+}
+
+.active {
+  background-color: #457147;
+  color: white;
+}
+
+@media screen and (min-width: 650px) {
+  .button-filter-nav-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .kadiwa-button-filter{
+    display: none;
+  }
+  .button-filter-nav-menu a{
+    font-size: 14px;
+  }
+}

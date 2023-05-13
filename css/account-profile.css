@@ -1,0 +1,35 @@
+
+/* Used BEM naming conv */
+.cart__container{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cart__container-font-style{
+    font-family: 'Inria Serif';
+}
+
+.product-item__container{
+    display: flex;
+    background: rgba(180, 207, 167, 0.29);
+}
+
+.product-item__container-header{
+    display: flex;
+    height: 60px;
+    background: rgba(180, 207, 167, 0.29);
+}
+
+.order-summary__container{
+    display: flex;
+    background-color: rgb(224, 224, 224);
+}
+
+@media screen and (max-width: 900px) {
+    .cart__container{
+        flex-direction: column;
+    }
+
+}
+
+

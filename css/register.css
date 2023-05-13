@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+/* Login Background image */
+.login-bg {
+    background-image: url(../img/login-view/login-background.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+/* background removing of white blur at edge */
+.login-bg::before {
+    content: "";
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/login-view/login-img.png);
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+    margin: -10px; /* this will do the trick */
+}
+
+/* Forms container */
+.login-body {
+    background-color: aliceblue;
+    height: 650px;
+    width: 900px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* left side image */
+.login-body .login-img {
+    max-width: 100%;
+    max-height:100%;
+}
+
+/* forms content css */
+.login-body .login-form {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    background-color: #457147 ;
+    
+
+}
+
+.login-body .login-form .login-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 80px;
+    height: auto; 
+}   
+
+.login-body .login-form h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Inria Serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 66px;
+    color: #FFFFFF;
+}
+
+.login-body .login-form .flex-input {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    margin-bottom: 10px;
+    
+    
+}
+
+.login-body .login-form input[type="text"],input[type="password"],input[type="email"] {
+    padding: 15px;
+    font-size: 15px;
+  
+}
+
+.login-body .login-form table {
+    border-spacing: 20px 0 ;
+}
+
+.login-body .login-form label {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.login-body .login-form input[type="button"] {
+    height: 40px;
+    width: 120px;
+    background-color: #2E3827;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.login-body .login-form input[type="button"]:hover {
+    background-color: rgb(48, 228, 108);
+    color: #FFFFFF;
+
+}
+
+.login-body .login-form a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.login-body .login-form .login-register {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.login-body .login-form .support-locals {
+    font-family: Inria Serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+
+}
+
+.login-body .login-form a:hover{
+    color: rgb(48, 228, 108);
+}
+
+
